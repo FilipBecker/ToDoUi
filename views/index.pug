@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2 Task List
+  input(type='text' id='TaskInput' placeholder='Add new task')
+  button(onclick='addTask()') Add
+  ul(id='taskList')
+
+  script(src='../javascripts/client.js')
