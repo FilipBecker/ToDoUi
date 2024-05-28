@@ -13,7 +13,7 @@ function fetchTasks() {
 };
 
 function displayTasks(tasks) {
-    const taskList = document.getElementById('todoList');
+    const taskList = document.getElementById('taskList');
     taskList.innerHTML = '';
 
     tasks.forEach(task => {
@@ -41,7 +41,6 @@ function addTask() {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
-
         },
         body: JSON.stringify({
             task: taskdec
